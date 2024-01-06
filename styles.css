@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300;1,500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #b9b4c7;
+}
+header {
+  width: 100vw;
+  height: 13vh;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  height: 80%;
+  width: 10%;
+  animation: logoani 2s;
+}
+@keyframes logoani {
+  0% {
+    transform: translateX(-500px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: rotateX(180deg);
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px;
+}
+a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: black;
+  font-weight: 500;
+}
+
+a:hover {
+  color: #750e21;
+}
+
+main {
+  margin-top: 30px;
+  height: 100%;
+}
+.banner {
+  background-color: black;
+  height: 40%;
+  width: 87%;
+  margin-left: 100px;
+  margin-top: 80px;
+  animation: bannerani 2s;
+  border-radius: 20px;
+}
+
+@keyframes bannerani {
+  from {
+    transform: translateY(1200px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+img {
+  width: 98%;
+  height: 80%;
+
+  margin: 20px 10px 10px 20px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  height: 100vh;
+  position: relative;
+}
+.card-1 {
+  width: 20%;
+  height: 60%;
+  background-color: #f5e8c7;
+  margin-top: 100px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px black;
+  position: relative;
+  cursor: pointer;
+}
+.card-1:hover {
+  transform: translateY(-10px);
+  transition: 1s;
+}
+.photo img {
+  width: 90%;
+}
+
+.info {
+  height: 40%;
+}
+
+h2 {
+  text-align: center;
+  padding: 10px;
+}
+
+p {
+  text-align: center;
+  padding: 10px;
+}
+
+footer {
+  background-color: #0f0f0f;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer p {
+  color: white;
+}
+
+.overlay {
+  background-image: url(images/cover.png);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+@media screen {
+}
